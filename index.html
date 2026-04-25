@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaktive Card Komponente</title>
+    <style>
+        /* CSS direkt im HTML-Dokument */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 320px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        /* Das Bild-Element (Farbverlauf als Platzhalter) */
+        .card-header {
+            height: 160px;
+            background: linear-gradient(135deg, #00b894, #00cec9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 3rem;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-body h2 {
+            margin: 0 0 10px 0;
+            color: #2d3436;
+            font-size: 1.4rem;
+        }
+
+        .card-body p {
+            color: #636e72;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .card-footer {
+            padding: 0 20px 20px;
+        }
+
+        .btn {
+            display: block;
+            text-align: center;
+            background: #0984e3;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .btn:hover {
+            background: #74b9ff;
+        }
+
+        /* Hover-Effekt für die ganze Card */
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="card-header">
+            ✨
+        </div>
+        <div class="card-body">
+            <h2>Fertiges Skript</h2>
+            <p>Dies ist eine kombinierte HTML- und CSS-Datei. Alles was du für das Design brauchst, befindet sich innerhalb der Style-Tags im Head-Bereich.</p>
+        </div>
+        <div class="card-footer">
+            <a href="#" class="btn">Code kopiert!</a>
+        </div>
+    </div>
+
+</body>
+</html>
